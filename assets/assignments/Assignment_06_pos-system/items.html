@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Items</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/stylesheet.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<section>
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid text-white fw-bold">
+            <img src="assets/images/cash-machine.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top " >
+            DESH POS SYSTEM
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="home.html" >Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="customers.html">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="items.html">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="orders.html">Orders</a>
+                    </li>
+                </ul>
+                <form class="d-flex" >
+                    <img src="assets/images/sign-out.png" alt="logo" width="35" height="35">
+                    <button class="btn btn-outline-light fw-bold" type="submit">sign out</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+<div class="container">
+    <br>
+    <img id="img1" src="assets/images/list-items.png" alt="icon" width="40" height="38">
+    <h1 class="d-inline-block align-text-top">ITEMS</h1>
+</div><br>
+
+
+<div id="maincontainer" class="container bg-body-secondary">
+    <div id="customermanage" class="row bg-success-subtle">
+        <form >
+            <div class="mb-3 fw-bold">
+                <label for="itemId" class="form-label">Item Code</label>
+                <input type="text" class="form-control" id="itemId" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3 fw-bold">
+                <label for="itemname" class="form-label">Item Name</label>
+                <input type="text" class="form-control" id="itemname" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3 fw-bold">
+                <label for="quantity" class="form-label">quantity </label>
+                <input type="text" class="form-control" id="quantity" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3 fw-bold">
+                <label for="unitprice" class="form-label">Unit Price</label>
+                <input type="text" class="form-control" id="unitprice" aria-describedby="emailHelp">
+            </div>
+            <button1   type="submit" class="btn btn-success">Save</button1>
+            <button1  type="submit" class="btn btn-primary">Update</button1>
+            <button1   type="submit" class="btn btn-danger">Delete</button1>
+        </form>
+
+    </div>
+    <div id="searchcustomer" class="row">
+        <form class="container">
+            <div class="mb-3 fw-bold">
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <label for="itemId" class="form-label">Enter Item Code</label>
+                <input type="text" class="form-control" aria-describedby="emailHelp"><br>
+                <button type="submit" class="btn btn-success fw-bold">Search Item</button>
+                <img id="searchicon" src="assets/images/search.png" name="search icon" width="40" height="40">
+                <br>
+                <br>
+                <br>
+                <button id="customerdetails" type="submit" class="btn   text-white">View Stock</button>
+                <button id="viewcus" type="submit" class="btn   text-white">Details</button>
+
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+<br>
+<table class=" container table table-bordered table-hover">
+    <thead class="bg-dark text-white">
+    <tr>
+        <th>item code</th>
+        <th>item name</th>
+        <th>quantity</th>
+        <th>unit price</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <td>I001</td>
+    <td>CR Books</td>
+    <td>200</td>
+    <td>350.00</td>
+
+    <tbody>
+    <td>I002</td>
+    <td>Cricket Ball</td>
+    <td>175</td>
+    <td>6000.00</td>
+
+    </tbody>
+</table>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
