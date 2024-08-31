@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KITT</title>
+  <style>
+
+    #button_panel{
+      font-weight: bold;
+      height: fit-content;
+      width: fit-content;
+      bottom: 0;
+      top: 70px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      position: absolute;
+    }
+
+    body{
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: black;
+    }
+    #light-panel {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+
+      width: fit-content;
+      height: fit-content;
+    }
+    #light-panel .light {
+      width: 50px;
+      height: 20px;
+      border: 0.5px solid gray;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+<section id="button_panel">
+<button type="button" id="start">Start</button>
+<button type="button" id="stop">Stop</button>
+</section>
+
+<section id="audio_panel">
+  <audio id="audio" src="../../assets/audio/Knight%20Rider%20Sms%20!%20Knight%20Rider%20!%20Theme.mp3"></audio>
+</section>
+
+<section id="light-panel">
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+  <div class="light"></div>
+</section>
+
+<script src="../../assets/lib/jQuery/jquery-3.6.4.min.js"></script>
+
+<script>
+  var lightNumber = 0;
+  var direction = "RIGHT";
+  let intervalID = null;
+
+  var lights = $(' .light');
+  console.log(lights);
+  //lights[3].style.background ='red';
+
+
+  function updateLight(){
+    $('.light').css({background: 'white'});
+    lights[lightNumber].style.background ='crimson';
+    if (lightNumber > 0){
+      lights[lightNumber -1].style.background ='red';
+    }
+    if (lightNumber < 6){
+      lights[lightNumber +1].style.background ='red';
+    }
+    if (lightNumber === 6){
+      direction = 'LEFT'
+    }
+    if (lightNumber === 0){
+      direction = 'RIGHT'
+    }
+    if (direction === 'RIGHT'){
+      lightNumber++;
+    }else {
+      lightNumber--;
+    }
+
+
+  }
+
+  $('#start').on('click' ,() =>{
+    $('#audio')[0].play();
+    intervalID =setInterval(updateLight, 100);
+  });
+$('#stop').on('click' ,() =>{
+  $('#audio')[0].pause();
+    clearInterval(intervalID);
+  });
+
+/*css timers----> setInterval()/ setTimeout()*/
+</script>
+</body>
+</html>
