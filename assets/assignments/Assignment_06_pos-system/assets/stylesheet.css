@@ -1,0 +1,467 @@
+.navbar {
+    background-color: #fff;
+    box-shadow: 0.5em 0.1em 0.5rem 0 black;
+}
+
+body {
+
+    background-color: rgb(245, 247, 251);
+}
+
+.nav-top-name {
+    display: flex;
+    width: 50rem;
+    height: 3rem;
+    align-content: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-top-name img {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+}
+
+.nav-top-name div:first-child {
+    height: 100%;
+    width: 20%;
+}
+
+.nav-top-name div:nth-child(2) {
+    height: 100%;
+    width: 40%;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.nav-top-name div:nth-child(3) {
+    width: 45%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 0.7rem;
+    display: inline-flex;
+
+}
+
+.nav-top-left {
+    height: 3rem;
+    position: relative;
+    width: 10rem;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.nav-top-name ul {
+    align-self: center;
+}
+
+.dashboard-context {
+    position: relative;
+    top: 1rem;
+    background-color: #fff;
+    height: 42rem;
+    width: 92%;
+    left: 4%;
+    display: flex;
+    border-radius: 1%;
+    box-shadow: 0.4rem 0.6rem 1.1rem rgba(0, 0, 0, 0.49), -0.4rem -0.4rem 1.1rem white;
+
+
+}
+
+.dashboard-context div {
+
+    flex-grow: 1;
+    height: 40%;
+    width: 10%;
+
+
+}
+
+.dashboard-context div>div{
+    position: relative;
+    left: 4%;
+    top: 4%;
+    margin:  1%;
+    height: 90%;
+    width: 90%;
+    border-radius: 10%;
+}
+.dashboard-context div:first-child>div{
+    background:linear-gradient(90deg,#fd9468,#ffbd68);
+}
+.dashboard-context div:nth-child(2)>div{
+    background:linear-gradient(90deg,#3ab8ba,#4eccff);
+}
+.dashboard-context div:nth-child(3)>div{
+    background:linear-gradient(90deg,#fc5f73,#ff7560);
+}
+#my-chart.line {
+    height: 200px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.dash-article{
+    left: 5%;
+    position: absolute;
+    top: 49%;
+    height: 50%;
+    width: 90%;
+}
+.customer-context{
+    position: relative;
+    top: 4rem;
+    background-color: #fff;
+    height: 42rem;
+    width: 92%;
+    left: 4%;
+    border-radius: 1%;
+
+    box-shadow: 0.4rem 1.4rem 1.1rem rgba(0, 0, 0, 0.49), -0.4rem -0.4rem 1.1rem white;
+}
+.context-name{
+    display: inline-flex;
+    position:absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 8rem;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+}
+
+.item-context{
+    position: relative;
+    top: 6rem;
+    background-color: #fff;
+    height: 42rem;
+    width: 92%;
+    left: 4%;
+    border-radius: 1%;
+    box-shadow: 0.4rem 0.6rem 1.1rem rgba(0, 0, 0, 0.49), -0.4rem -0.4rem 1.1rem white;
+}
+#add-customer{
+    top: 3%;
+    position: relative;
+    height: 45%;
+    width: 90%;
+    left: 5%;
+    border-left:0.5rem solid #f46565;
+}
+#add-customer:before{
+    font-weight: bolder;
+    text-decoration: underline;
+    position: absolute;
+    content: 'ADD CUSTOMER';
+    left: 1%;
+}
+#add-customer:after{
+    content: "ID";
+    right: 1%;
+    position: absolute;
+    font-weight: bolder;
+}
+.form{
+    width: 100%;
+    position: absolute;
+    top: 3rem;
+}
+.form-floating{
+    position: absolute;
+}
+#name{
+    width: 100%;
+}
+#age{
+    width: 40%;
+    top: 8rem;
+}
+#salary{
+    width: 40%;
+    right: 0;
+    top: 8rem;
+}
+#address{
+    width: 100%;
+top: 4rem;
+}
+#add-Item{
+    top: 3%;
+    display: flex;
+    position: relative;
+    height: 30%;
+    width: 90%;
+    justify-content: space-evenly;
+    left: 5%;
+    border-left:0.5rem solid #f46565;
+}
+#itemName{
+    margin-left: 1%;
+flex-grow: 2;
+    position: relative;
+
+}
+#price{
+
+position: relative;
+}
+#qty{
+
+position: relative;
+}
+.form2{
+    gap: 1%;
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.form2:before{
+    text-decoration: underline;
+    font-weight: bold;
+    position: absolute;
+    content: 'ADD ITEM';
+    top: 0;
+    left: 1%;
+}
+.form2:after{
+
+    top: 0;
+    right: 2%;
+    content: 'id';
+    position: absolute;
+    font-weight: bold;
+}
+
+.item-table-div{
+    position: relative;
+    width: 90%;
+    top: 7.5rem;
+    left: 5%;
+    height: 20rem;
+}
+table.greenTable {
+    font-family: Georgia, serif;
+    border: 6px solid #000000;
+    background-color: #FF9068;
+    width: 100%;
+    text-align: center;
+}
+table.greenTable td, table.greenTable th {
+    border: 1px solid #000000;
+    padding: 3px 2px;
+}
+table.greenTable tbody td {
+    font-size: 13px;
+}
+table.greenTable tr:nth-child(even) {
+    background: #FF6868;
+}
+table.greenTable thead {
+    background: #FE5F5F;
+    background: -moz-linear-gradient(top, #fe8787 0%, #fe6f6f 66%, #FE5F5F 100%);
+    background: -webkit-linear-gradient(top, #fe8787 0%, #fe6f6f 66%, #FE5F5F 100%);
+    background: linear-gradient(to bottom, #fe8787 0%, #fe6f6f 66%, #FE5F5F 100%);
+    border-bottom: 0px solid #444444;
+}
+table.greenTable thead th {
+    font-size: 19px;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+    border-left: 2px solid #000000;
+}
+table.greenTable thead th:first-child {
+    border-left: none;
+}
+
+table.greenTable tfoot {
+    font-size: 13px;
+    font-weight: bold;
+    color: #F0F0F0;
+    background: #B24343;
+    background: -moz-linear-gradient(top, #c57272 0%, #b95555 66%, #B24343 100%);
+    background: -webkit-linear-gradient(top, #c57272 0%, #b95555 66%, #B24343 100%);
+    background: linear-gradient(to bottom, #c57272 0%, #b95555 66%, #B24343 100%);
+    border-top: 1px solid #000000;
+}
+table.greenTable tfoot td {
+    font-size: 13px;
+}
+table.greenTable tfoot .links {
+    text-align: right;
+}
+table.greenTable tfoot .links a{
+    display: inline-block;
+    background: #FFFFFF;
+    color: #000000;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+.customer-table-div{
+    position: relative;
+    width: 90%;
+    top: 3rem;
+    left: 5%;
+    height: 16rem;
+}
+#btnSaveItem{
+    bottom: 0;
+    right: 1%;
+    width: 6rem;
+    position: absolute;
+}
+#btnSaveCustomer{
+    bottom: 2%;
+    right: 1%;
+    width: 6rem;
+    position: absolute;
+}
+.input-group{
+    width: 50%;
+    left: 45%;
+    top: 7rem;
+}
+.group-customer{
+    top: 3rem;
+}
+.order-context{
+    position: relative;
+    top: 8rem;
+    background-color: #fff;
+    height: 42rem;
+    width: 92%;
+    left: 4%;
+    border-radius: 1%;
+    box-shadow: 0.4rem 0.6rem 1.1rem rgba(0, 0, 0, 0.49), -0.4rem -0.4rem 1.1rem white;
+
+}
+.order-context-div{
+    position: relative;
+
+    height: 30rem;
+    width: 90%;
+    left: 5%;
+}
+.order-context-div>div{
+    height: 24rem;
+    position: relative;
+    top: 1rem;
+    display: flex;
+    gap: 1%;
+}
+.order-div{
+    position: relative;
+   flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
+    box-shadow: 0.4rem 0.6rem 1.1rem rgba(0, 0, 0, 0.49), -0.4rem -0.4rem 1.1rem white;
+
+}
+.order-table-div{
+    position: relative;
+    width: 90%;
+    left: 5%;
+    bottom: 1%;
+
+}
+.top-color{
+    background-color: #FF9068;
+}
+.content-invoice{
+    height: 90%;
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+}
+.content-invoice>div{
+    position: relative;
+    left: 2%;
+width: 40%;
+}
+#custaddress{
+    left: 2%;
+    width: 80%;
+}
+#cust-drop{
+    top: 2%;
+    left: 12rem;
+    position: absolute;
+}
+#item-drop{
+    top: 6%;
+    left: 14rem;
+    position: absolute;
+}
+.item-details{
+    height: 100%;
+    display: flex;
+    position: relative;
+
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+.item-details div{
+    left: 1rem;
+    position: relative;
+    width: 40%;
+
+}
+#btnSaveItemInvoice{
+    width: 30%;
+    position: absolute;
+    left: 13rem;
+    top: 19rem;
+
+}
+#btnPurchase{
+    left: 13rem;
+    position: absolute;
+    top: 21rem;
+}
+.purchase-context div{
+    left: 1rem;
+    width: 14rem;
+    position: absolute;
+}
+
+.purchase-context div:nth-child(2){
+    top: 13rem;
+}
+.purchase-context div:nth-child(3){
+    top: 18rem;
+}
+.purchase-context div:nth-child(4){
+    top: 15rem;
+}
+.purchase-context>p:first-child{
+    top: 2rem;
+    display: inline-flex;
+    position: absolute;
+    left: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.purchase-context p:nth-child(2){
+    top: 6rem;
+    display: inline-flex;
+    position: absolute;
+    left: 1rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+#cash{
+    top: 12rem;
+}
