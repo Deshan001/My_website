@@ -105,13 +105,13 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url("/assets/images/dashboard.jpg") no-repeat;
+    background: url("/assets/images/newback.jpg") no-repeat;
     background-size: cover;
     background-position: right;
 }
 
 .home-content {
-    max-width: 50rem;
+    max-width: 60rem;
     z-index: 99;
 
 }
@@ -127,12 +127,46 @@ section {
     color: var(--text-color);
 }
 
-.home-content .text-animate {
+/*.text-animate {
     position: relative;
     width: 32.8rem;
+}*/
+
+.text-animate{
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-.home-content .text-animate h3 {
+.text-animate h3{
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+    font-size: 24px;
+}
+
+.text-animate h3 .word{
+    position: absolute;
+    display: flex;
+    opacity: 0;
+}
+
+.text-animate h3 .word .letter{
+    transform-origin: center center 25px;
+}
+
+.text-animate h3 .word .letter.out{
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6,0,0.7,0.2);
+}
+
+.text-animate h3 .word .letter.in{
+    transition: 0.38s ease;
+}
+
+.text-animate h3 .word .letter.behind{
+    transform: rotateX(-90deg);
+}
+/*.home-content .text-animate h3 {
     font-size: 3.2rem;
     font-weight: 700;
     color: transparent;
@@ -143,9 +177,9 @@ section {
     background-position: -33rem 0;
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
-}
+}*/
 
-.home-content .text-animate h3::before{
+/*.home-content .text-animate h3::before{
     content: '';
     position: absolute;
     top: 0;
@@ -156,7 +190,7 @@ section {
     z-index: -1;
     animation: homeCursorText 6s linear infinite;
     animation-delay: 2s;
-}
+}*/
 
 .home-content p {
     animation: slideLeft 1s ease forwards;
@@ -304,15 +338,15 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-    width: 60%;
+    width: 70%;
     height: 100%;
     background: transparent;
     transition: 3s;
 }
 
 .home-imgHover:hover {
-    background: black;
-    opacity: .8;
+    background: #000000;
+    opacity: .9;
 }
 
 /*------------------ About Me -------------------------*/
