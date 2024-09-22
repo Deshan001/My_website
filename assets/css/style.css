@@ -35,7 +35,7 @@
 
 html {
     font-size: 62.5%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -81,6 +81,7 @@ body {
     color: var(--text-color);
     font-weight: 500;
     margin-left: 3.5rem;
+    transition: .3s;
 }
 
 .navbar a:hover,
