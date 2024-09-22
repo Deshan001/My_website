@@ -45,7 +45,8 @@ let changeText = ()=>{
 };
 
 changeText();
-setInterval(changeText,3000)
+setInterval(changeText,3000);
+
 ////////////////////////////////////////
 
 // scroll sections
